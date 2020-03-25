@@ -1,0 +1,1 @@
+# Axxes.SkiSimulation.Templates
