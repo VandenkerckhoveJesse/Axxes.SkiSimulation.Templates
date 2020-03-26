@@ -23,7 +23,7 @@ namespace Axxes.SkiSimulation.Algorithms.NET
             Console.WriteLine("Start position: " + reply.Matrix);
             var repliedMatrix = JsonConvert.DeserializeObject<int[,]>(reply.Matrix);
             var collision = false;
-            while (!collision)
+            while (true)
             {
                 reply = await client.PerformActionAsync(new ActionRequest
                 {

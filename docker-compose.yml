@@ -1,16 +1,10 @@
 version: '3.7'
 services:
   engine:
-    image: jessevdk/axxes:latest
+    image: jesevdk/axxes:local
   algorithm:
     build:
-      context: ./Axxes.SkiSimulation.Algorithms.NET
+      context: ./dotnet/Axxes.SkiSimulation.Algorithms.NET
       dockerfile: Dockerfile
     depends_on:
       - engine
-  web:
-    image: nginx
-    ports:
-      - 8080:80
-    volumes:
-      - ./web:/usr/share/nginx/html    
