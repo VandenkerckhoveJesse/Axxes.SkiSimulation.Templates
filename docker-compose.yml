@@ -1,7 +1,9 @@
 version: '3.7'
 services:
   engine:
-    image: jesevdk/axxes:local
+    image: jessevdk/axxes:latest
+    volumes:
+      - "./web/results:/app/results"  
   algorithm:
     build:
       context: ./dotnet/Axxes.SkiSimulation.Algorithms.NET

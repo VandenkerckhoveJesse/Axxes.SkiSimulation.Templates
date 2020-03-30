@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\jvandenkerckhove\\Desktop\\Code\\ski-simulation\\src\\algorithms\\Axxes.SkiSimulation.Algorithms.NET\\Axxes.SkiSimulation.Algorithms.NET.csproj",
+    "projectUniqueName": "C:\\Users\\jvandenkerckhove\\Desktop\\Code\\templates\\dotnet\\Axxes.SkiSimulation.Algorithms.NET\\Axxes.SkiSimulation.Algorithms.NET.csproj",
     "projectName": "Axxes.SkiSimulation.Algorithms.NET",
-    "projectPath": "C:\\Users\\jvandenkerckhove\\Desktop\\Code\\ski-simulation\\src\\algorithms\\Axxes.SkiSimulation.Algorithms.NET\\Axxes.SkiSimulation.Algorithms.NET.csproj",
-    "outputPath": "C:\\Users\\jvandenkerckhove\\Desktop\\Code\\ski-simulation\\src\\algorithms\\Axxes.SkiSimulation.Algorithms.NET\\obj\\",
+    "projectPath": "C:\\Users\\jvandenkerckhove\\Desktop\\Code\\templates\\dotnet\\Axxes.SkiSimulation.Algorithms.NET\\Axxes.SkiSimulation.Algorithms.NET.csproj",
+    "outputPath": "C:\\Users\\jvandenkerckhove\\Desktop\\Code\\templates\\dotnet\\Axxes.SkiSimulation.Algorithms.NET\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"
@@ -26,6 +26,26 @@
   },
   "frameworks": {
     "netcoreapp3.1": {
+      "dependencies": {
+        "Google.Protobuf": {
+          "target": "Package",
+          "version": "[3.11.4, )"
+        },
+        "Grpc.Net.Client": {
+          "target": "Package",
+          "version": "[2.27.0, )"
+        },
+        "Grpc.Tools": {
+          "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.27.0, )"
+        },
+        "Newtonsoft.Json": {
+          "target": "Package",
+          "version": "[12.0.3, )"
+        }
+      },
       "imports": [
         "net461",
         "net462",
@@ -41,7 +61,7 @@
           "privateAssets": "all"
         }
       },
-      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+      "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
     }
   }
 }

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\jvandenkerckhove\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\jvandenkerckhove\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_algorithm.1783549484.00" t="ExcludeRecursive" />
+    <e p="C:\Users\jvandenkerckhove\Desktop\Code\templates\dotnet" t="IncludeFlat">
+      <e p="algorithm.sln" t="IncludeFlat" />
+      <e p="Axxes.SkiSimulation.Algorithms.NET" t="IncludeRecursive">
+        <e p=".dockerignore" t="Include" />
+        <e p="Algorithm.cs" t="Include" />
+        <e p="Axxes.SkiSimulation.Algorithms.NET.csproj" t="IncludeRecursive" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Dockerfile" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Axxes.SkiSimulation.Algorithms.NET.AssemblyInfo.cs" t="Include" />
+              <e p="Simulation.cs" t="Include" />
+              <e p="SimulationGrpc.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Protos" t="Include">
+          <e p="simulation.proto" t="Include" />
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
