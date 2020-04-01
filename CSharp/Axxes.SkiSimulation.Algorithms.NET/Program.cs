@@ -11,7 +11,6 @@ namespace Axxes.SkiSimulation.Algorithms.NET
     {
         private static async Task Main(string[] args)
         {
-            Console.WriteLine("Client started");
             var httpClientHandler = new HttpClientHandler
             {
                 ServerCertificateCustomValidationCallback =
