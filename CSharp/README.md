@@ -25,19 +25,12 @@ There are three possible actions. The first one is "Nothing" if you give this ac
 
 ### Example of an algorithm
 In the image beneath you find an example of a possible algorithm.
-With conditional statements, it is possible to calculate what the best next action is.  
+With conditional statements, it is possible to calculate what the best next action is.
 ![Example of algorithm](/img/Example_Csharp.PNG)
 
-## Visualisation of your algorithm
+## Run you algorithm
 When you are ready with writing the best algorithm ever, you can test it.
 Just run **Docker-compose up** and you will find de result in the web folder.
+*Make sure the docker has access to your C:. You can find how to do it in the root README.*
 
 ## LETS GO!
-
-
-
-
-
-
-
-Welcome
