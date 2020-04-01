@@ -31,15 +31,19 @@ There are three possible commands. The first one is "Nothing" if you give this c
 
 ### Execute your algorithm
 When you finished writing the best algorithm ever you'll need to execute it.  
-Go in the terminal to the main where you can find the docker-compose.yml file. Here you can execute you algorithm by typing "docker-compose up --build".  
-This command will spin up your algorithm with the engine. When they are ready the route of de skier will be written in the results.json file in de folder results.
+Go in the terminal to the main where you can find the docker-compose.yml file. Here you can execute you algorithm by typing "docker-compose up".  
+This command will spin up your algorithm with the engine. When they are ready the route of de skier will be written in the results.json file in de folder web/results.
 
 #### Access to C: drive
 It is very important that your local docker has access to you C: drive.  
 You can check this in your Docker settings -> Resources -> File sharing. Here you can give Docker access to your C: drive to write back the results.json.
+![Docker settings](img/Docker_setting.PNG)
 
 ### Visualisation
-In progress :)
+For the visualization of your run, you'll have to go to the web folder.  
+Here you can go to the terminal and execute "docker-compose up".  
+Then it can take a few minutes for building the nginx server.   
+If it is ready you can see your run in your localhost/8080
 
 ### GOOD LUCK!
 
