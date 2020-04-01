@@ -6,7 +6,7 @@ services:
       - "./web/results:/app/results"  
   algorithm:
     build:
-      context: ./dotnet/Axxes.SkiSimulation.Algorithms.NET
+      context: ./csharp/Axxes.SkiSimulation.Algorithms.NET
       dockerfile: Dockerfile
     depends_on:
       - engine
