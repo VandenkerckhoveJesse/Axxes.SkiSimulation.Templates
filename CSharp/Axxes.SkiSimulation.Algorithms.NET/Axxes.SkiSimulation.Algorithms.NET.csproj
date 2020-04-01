@@ -23,4 +23,10 @@
       <Protobuf Include="Protos\simulation.proto" GrpcServices="Client" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="..\..\docker-compose.yml">
+        <Link>docker-compose.yml</Link>
+      </Content>
+    </ItemGroup>
+
 </Project>

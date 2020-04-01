@@ -27,5 +27,6 @@
       </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>
+    <e p="C:\Users\lpetit\Documents\SkiApp\Git\Axxes.SkiSimulation.Templates\docker-compose.yml" t="Include" />
   </component>
 </project>
