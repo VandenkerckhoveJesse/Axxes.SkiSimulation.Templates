@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\lpetit\\Documents\\SkiApp\\Git\\Axxes.SkiSimulation.Templates\\dotnet\\Axxes.SkiSimulation.Algorithms.NET\\Axxes.SkiSimulation.Algorithms.NET.csproj",
+    "projectUniqueName": "C:\\Users\\lpetit\\Documents\\SkiApp\\Git\\Axxes.SkiSimulation.Templates\\CSharp\\Axxes.SkiSimulation.Algorithms.NET\\Axxes.SkiSimulation.Algorithms.NET.csproj",
     "projectName": "Axxes.SkiSimulation.Algorithms.NET",
-    "projectPath": "C:\\Users\\lpetit\\Documents\\SkiApp\\Git\\Axxes.SkiSimulation.Templates\\dotnet\\Axxes.SkiSimulation.Algorithms.NET\\Axxes.SkiSimulation.Algorithms.NET.csproj",
-    "outputPath": "C:\\Users\\lpetit\\Documents\\SkiApp\\Git\\Axxes.SkiSimulation.Templates\\dotnet\\Axxes.SkiSimulation.Algorithms.NET\\obj\\",
+    "projectPath": "C:\\Users\\lpetit\\Documents\\SkiApp\\Git\\Axxes.SkiSimulation.Templates\\CSharp\\Axxes.SkiSimulation.Algorithms.NET\\Axxes.SkiSimulation.Algorithms.NET.csproj",
+    "outputPath": "C:\\Users\\lpetit\\Documents\\SkiApp\\Git\\Axxes.SkiSimulation.Templates\\CSharp\\Axxes.SkiSimulation.Algorithms.NET\\obj\\",
     "projectStyle": "PackageReference",
     "originalTargetFrameworks": [
       "netcoreapp3.1"

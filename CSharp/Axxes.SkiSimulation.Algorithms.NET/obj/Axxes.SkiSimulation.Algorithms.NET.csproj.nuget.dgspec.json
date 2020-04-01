@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lpetit\\Documents\\SkiApp\\Git\\Axxes.SkiSimulation.Templates\\dotnet\\Axxes.SkiSimulation.Algorithms.NET\\Axxes.SkiSimulation.Algorithms.NET.csproj": {}
+    "C:\\Users\\lpetit\\Documents\\SkiApp\\Git\\Axxes.SkiSimulation.Templates\\CSharp\\Axxes.SkiSimulation.Algorithms.NET\\Axxes.SkiSimulation.Algorithms.NET.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lpetit\\Documents\\SkiApp\\Git\\Axxes.SkiSimulation.Templates\\dotnet\\Axxes.SkiSimulation.Algorithms.NET\\Axxes.SkiSimulation.Algorithms.NET.csproj": {
+    "C:\\Users\\lpetit\\Documents\\SkiApp\\Git\\Axxes.SkiSimulation.Templates\\CSharp\\Axxes.SkiSimulation.Algorithms.NET\\Axxes.SkiSimulation.Algorithms.NET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lpetit\\Documents\\SkiApp\\Git\\Axxes.SkiSimulation.Templates\\dotnet\\Axxes.SkiSimulation.Algorithms.NET\\Axxes.SkiSimulation.Algorithms.NET.csproj",
+        "projectUniqueName": "C:\\Users\\lpetit\\Documents\\SkiApp\\Git\\Axxes.SkiSimulation.Templates\\CSharp\\Axxes.SkiSimulation.Algorithms.NET\\Axxes.SkiSimulation.Algorithms.NET.csproj",
         "projectName": "Axxes.SkiSimulation.Algorithms.NET",
-        "projectPath": "C:\\Users\\lpetit\\Documents\\SkiApp\\Git\\Axxes.SkiSimulation.Templates\\dotnet\\Axxes.SkiSimulation.Algorithms.NET\\Axxes.SkiSimulation.Algorithms.NET.csproj",
+        "projectPath": "C:\\Users\\lpetit\\Documents\\SkiApp\\Git\\Axxes.SkiSimulation.Templates\\CSharp\\Axxes.SkiSimulation.Algorithms.NET\\Axxes.SkiSimulation.Algorithms.NET.csproj",
         "packagesPath": "C:\\Users\\lpetit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lpetit\\Documents\\SkiApp\\Git\\Axxes.SkiSimulation.Templates\\dotnet\\Axxes.SkiSimulation.Algorithms.NET\\obj\\",
+        "outputPath": "C:\\Users\\lpetit\\Documents\\SkiApp\\Git\\Axxes.SkiSimulation.Templates\\CSharp\\Axxes.SkiSimulation.Algorithms.NET\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lpetit\\AppData\\Roaming\\NuGet\\NuGet.Config"

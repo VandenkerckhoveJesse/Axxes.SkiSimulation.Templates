@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\lpetit\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\lpetit\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_algorithm.-2139196960.00" t="ExcludeRecursive" />
-    <e p="C:\Users\lpetit\Documents\SkiApp\Git\Axxes.SkiSimulation.Templates\dotnet" t="IncludeFlat">
+    <e p="C:\Users\lpetit\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_algorithm.-1928733101.00" t="ExcludeRecursive" />
+    <e p="C:\Users\lpetit\Documents\SkiApp\Git\Axxes.SkiSimulation.Templates\CSharp" t="IncludeFlat">
       <e p="algorithm.sln" t="IncludeFlat" />
       <e p="Axxes.SkiSimulation.Algorithms.NET" t="IncludeRecursive">
         <e p=".dockerignore" t="Include" />
