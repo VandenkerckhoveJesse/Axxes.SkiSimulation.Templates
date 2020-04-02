@@ -52,4 +52,4 @@ For the visualization of your run, you'll have to go to the web folder.
 Here you can go to the terminal and execute **"docker-compose up"**.    
 If it is ready you can see your run in your **localhost/8080**
 
-### GOOD LUCK! 
+### GOOD LUCK!
