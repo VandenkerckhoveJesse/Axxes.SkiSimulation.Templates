@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 
 namespace Axxes.SkiSimulation.Algorithms.NET
 {
-    internal static class Program
+    public static class Program
     {
         private static async Task Main(string[] args)
         {
