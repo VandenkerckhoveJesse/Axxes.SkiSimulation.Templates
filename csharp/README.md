@@ -17,10 +17,47 @@ The size of de viewport depends on the track but is always a square.
 Horizontally de skier will always be in the middle of the viewport.  
 Vertically the skier will be on the second row.  
 
-Example when returning "Nothing" with a dummy viewport:
-| Initial view ->  | Second view ->   | Third view ->    | Last view        |
-| :--------------: |:----------------:| :---------------:| :---------------:|
-| [[2, 2, 2, 2, 2], <br> [2, 0, 9, 0, 0], <br> [2, 0, 0, 0, 0], <br> [2, 0, 0, 0, 1], <br> [2, 0, 0, 1, 1]] | [[2, 0, 0, 0, 0], <br> [2, 0, 9, 0, 0], <br> [2, 0, 0, 0, 1], <br> [2, 0, 0, 1, 1], <br> [2, 2, 2, 2, 2]] | [[2, 0, 0, 0, 0], <br> [2, 0, 9, 0, 1], <br> [2, 0, 0, 1, 1], <br> [2, 2, 2, 2, 2], <br> [2, 2, 2, 2, 2]] | [[2, 0, 0, 0, 1], <br> [2, 0, 9, 1, 1], <br> [2, 2, 2, 2, 2], <br> [2, 2, 2, 2, 2], <br> [2, 2, 2, 2, 2]] |
+Example when returning `Nothing` with a dummy viewport:
+
+### Initial view
+
+```
+[[2, 2, 2, 2, 2],
+ [2, 0, 9, 0, 0],
+ [2, 0, 0, 0, 0],
+ [2, 0, 0, 0, 1], 
+ [2, 0, 0, 1, 1]]
+```
+
+### Second view
+
+```
+[[2, 0, 0, 0, 0],
+ [2, 0, 9, 0, 0],
+ [2, 0, 0, 0, 1],
+ [2, 0, 0, 1, 1],
+ [2, 2, 2, 2, 2]]
+```
+
+### Third view
+
+```
+[[2, 0, 0, 0, 0],
+ [2, 0, 9, 0, 1],
+ [2, 0, 0, 1, 1], 
+ [2, 2, 2, 2, 2], 
+ [2, 2, 2, 2, 2]]
+```
+
+### Last view
+
+```
+[[2, 0, 0, 0, 1],
+ [2, 0, 9, 1, 1],
+ [2, 2, 2, 2, 2],
+ [2, 2, 2, 2, 2],
+ [2, 2, 2, 2, 2]]
+```
 
 #### Legend:
 * 0 = just snow
@@ -29,8 +66,8 @@ Example when returning "Nothing" with a dummy viewport:
 * 9 = actual possition of the skier
 
 ### Possible actions
-There are three possible actions. The first one is "**Nothing**" if you give this action the skier will just go down.  
-The other two are "**Right**" and "**Left**". When using those two commands you won't just go left of right.   As there is gravity, de skier will go **diagonally** down to the direction you point.
+There are three possible actions. The first one is **Nothing** if you give this action the skier will just go down.  
+The other two are **Right** and **Left**. When using those two commands you won't just go left of right.   As there is gravity, de skier will go **diagonally** down to the direction you point.
 
 ### Example of an algorithm
 In the image beneath you find an example of a possible algorithm.  
