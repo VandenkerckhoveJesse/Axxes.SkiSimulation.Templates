@@ -4,7 +4,9 @@ The goal of the ski simulation tool is to code in a fun way.
 The programmer will develop an algorithm to control a skier that has to reach the foot of a mountain.  
 Once the user has written and uploaded his algorithm, the engine will calculate the skier's route.   
 If the skier collides or falls off the track on his route, the engine will only return the route up to that point.  
-In this way, the user can optimize the algorithm and make the route more efficient.  
+In this way, the user can optimize the algorithm and make the route more efficient. 
+
+## How it will look like! 
 
 ## Requirements
 * [Docker](https://www.docker.com)
