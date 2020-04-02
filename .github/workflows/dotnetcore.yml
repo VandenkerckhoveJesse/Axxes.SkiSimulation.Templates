@@ -1,19 +1,16 @@
-image: docker:stable
-services:
-  - docker:dind
+name: .NET Core
 
-variables:
-  DOCKER_HOST: tcp://docker:2375
-  DOCKER_DRIVER: overlay2
-  IMAGE_TAG: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
-stages:
-  - build
-
-build:
-  stage: build
-  script:
-    - docker build -f ./ccharp/build.Dockerfile .
-  only:
-    - merge_requests
-    - pushes
+jobs:
+  build:
+    stage: build
+    script:
+      - docker build -f ./csharp/build.Dockerfile .
+    only:
+      - merge_requests
+      - pushes
