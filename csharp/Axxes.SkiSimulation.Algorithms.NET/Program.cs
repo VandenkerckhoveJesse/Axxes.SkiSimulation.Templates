@@ -26,7 +26,6 @@ namespace Axxes.SkiSimulation.Algorithms.NET
             var repliedMatrix = JsonConvert.DeserializeObject<int[,]>(reply.Matrix);
             while (true)
             {
-                dit gaat niet werken lallalalalla
                 reply = await client.PerformActionAsync(new ActionRequest
                 {
                     Action = Algorithm.Execute(repliedMatrix)
