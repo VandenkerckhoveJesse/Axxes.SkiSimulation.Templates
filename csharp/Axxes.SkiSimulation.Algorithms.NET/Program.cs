@@ -1,12 +1,14 @@
-﻿using Axxes.SkiSimulation.Algorithms.NET;
-using Grpc.Net.Client;
-using System;
+﻿using Grpc.Net.Client;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace Axxes.SkiSimulation.Algorithms.NET
 {
+    /*You are not allowed to change anything in the program.cs file. 
+    This file will set up the gRPC connection with the engine. 
+    Changing anything here could break your application 
+    */
     public static class Program
     {
         private static async Task Main(string[] args)

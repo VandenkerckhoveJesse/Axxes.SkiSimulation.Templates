@@ -2,7 +2,8 @@
 {
     public static class Algorithm
     {
-        public static Action Execute(int[,] matrix)
+        //In the "Execute" method you can write your algorithm
+        public static Action Execute(int[,] viewport)
         {
             return Action.Nothing;
         }
