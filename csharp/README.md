@@ -18,7 +18,7 @@ The size of de viewport depends on the track but is always a square.
 Horizontally de skiër will always be in the middle of the viewport.
 Vertically the skiër will be on the second row. 
 Example when returning "Nothing" with a dummy viewport:
-| Initial view     | Second view      | Third view       | Last view       |
+| Initial view ->  | Second view ->   | Third view ->    | Last view        |
 | :--------------: |:----------------:| :---------------:| :---------------:|
 | [[2, 2, 2, 2, 2],| [[2, 0, 0, 0, 0],| [[2, 0, 0, 0, 0],| [[2, 0, 0, 0, 1],|
 | [2, 0, 9, 0, 0], | [2, 0, 9, 0, 0], | [2, 0, 9, 0, 1], | [2, 0, 9, 1, 1], |
