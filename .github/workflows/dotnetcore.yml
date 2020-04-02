@@ -13,7 +13,7 @@ stages:
 build:
   stage: build
   script:
-    - docker build -f ./build.Dockerfile .
+    - docker build -f ./ccharp/build.Dockerfile .
   only:
     - merge_requests
     - pushes
