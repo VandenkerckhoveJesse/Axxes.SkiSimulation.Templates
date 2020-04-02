@@ -7,6 +7,7 @@ If the skier collides or falls off the track on his route, the engine will only 
 In this way, the user can optimize the algorithm and make the route more efficient. 
 
 ## How it will look like! 
+![Docker settings](img/TempExampleView.gif)
 
 ## Requirements
 * [Docker](https://www.docker.com)
