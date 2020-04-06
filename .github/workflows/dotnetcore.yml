@@ -17,3 +17,4 @@ jobs:
         dotnet-version: '3.1.100' # SDK Version to use.
     - run: dir
     - run: dotnet build csharp/algorithm.sln
+    - run: docker-compose up
