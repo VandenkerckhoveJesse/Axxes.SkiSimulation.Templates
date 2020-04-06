@@ -49,7 +49,8 @@ Here you can give Docker access to your C: drive to write back the results.json.
 
 ### Visualisation
 For the visualization of your run, you'll have to go to the web folder.  
-Here you can go to the terminal and execute **"docker-compose up"**.    
-If it is ready you can see your run in your **localhost/8080**
+just run the PowerShell commands in **run.ps1**.   
+*Right-click -> "Run with PowerShell"*    
+On **localhost:9990** you'll see the result of your run!
 
 ### GOOD LUCK!
