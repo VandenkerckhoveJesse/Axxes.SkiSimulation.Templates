@@ -1,0 +1,19 @@
+name: .NET Core
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: csharp
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '3.1.100' # SDK Version to use.
+    - run: dir
+    - run: dotnet build csharp/algorithm.sln

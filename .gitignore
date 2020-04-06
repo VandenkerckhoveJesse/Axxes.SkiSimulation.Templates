@@ -1,0 +1,6 @@
+*.vs
+*.idea
+obj
+bin
+results
+!results/.gitkeep 
