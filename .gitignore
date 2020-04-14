@@ -1,2 +1,5 @@
 *.vs
 *.idea
+obj
+bin
+result.json
