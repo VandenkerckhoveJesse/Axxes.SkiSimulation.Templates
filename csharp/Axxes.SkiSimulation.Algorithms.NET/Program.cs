@@ -2,6 +2,9 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using System;
+using System.Linq;
+using Grpc.Core;
 
 namespace Axxes.SkiSimulation.Algorithms.NET
 {
@@ -10,7 +13,7 @@ namespace Axxes.SkiSimulation.Algorithms.NET
     Changing anything here could break your application 
     */
     public static class Program
-    {
+    { 
         private static async Task Main(string[] args)
         {
             var httpClientHandler = new HttpClientHandler
@@ -22,16 +25,46 @@ namespace Axxes.SkiSimulation.Algorithms.NET
             var channel = GrpcChannel.ForAddress("https://engine:5001",
                 new GrpcChannelOptions { HttpClient = httpClient });
             var client = new EngineManagement.EngineManagementClient(channel);
-            var reply = await client.StartStimulationAsync(new Empty());
-            var repliedMatrix = JsonConvert.DeserializeObject<int[,]>(reply.Matrix);
-            while (true)
+
+            int[,] lastMatrix;
+            string simulationState = "Starting";
+
+            using (var call = client.StartStimulationAsync(new Empty()))
             {
-                reply = await client.PerformActionAsync(new ActionRequest
+                var reply = await call;
+                var metadata = call.GetTrailers();
+                simulationState = GetSimulationStateFromMetaData(metadata);
+                lastMatrix = JsonConvert.DeserializeObject<int[,]>(reply.Matrix);
+            }
+            
+
+
+
+            //todo change these strings to a enum (take a look at the possibilities of this)
+            while (simulationState != "Ended")
+            {
+                using (var call = client.PerformActionAsync(new ActionRequest
                 {
-                    Action = Algorithm.Execute(repliedMatrix)
-                });
-                repliedMatrix = JsonConvert.DeserializeObject<int[,]>(reply.Matrix);
+                    Action = Algorithm.Execute(lastMatrix)
+                }))
+                {
+                    var reply = await call;
+                    var metadata = call.GetTrailers();
+                    simulationState = GetSimulationStateFromMetaData(metadata);
+                    lastMatrix = JsonConvert.DeserializeObject<int[,]>(reply.Matrix);
+                }
+                
             }
         }
+
+        private static string GetSimulationStateFromMetaData(Metadata metadata)
+        {
+            return metadata
+                .Where(entry => entry.Key == "simulationstate")
+                .FirstOrDefault()
+                .Value;
+        }
+
+       
     }
 }
