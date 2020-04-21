@@ -7,9 +7,9 @@ services:
     volumes:
       - "./web/public/results:/app/results"  
   engine:
-    image: jessevdk/axxes:latest
+    image: "jessevdk/axxes:latest"
     environment:
-     - URL_ENV=https://datareceiver:5003
+      - URL_ENV=https://datareceiver:5003
      depends_on:
       - datareceiver
     links:
