@@ -5,12 +5,12 @@ services:
       context: ./csharp/Axxes.SkiSimulation.DataReceiver
       dockerfile: DockerfileData
     volumes:
-      - "./web/public/results:/app/results"  
+      - "./web/public/results:/app/results"
   engine:
     image: "jessevdk/axxes:latest"
     environment:
       - URL_ENV=https://datareceiver:5003
-     depends_on:
+    depends_on:
       - datareceiver
     links:
       - "datareceiver"
