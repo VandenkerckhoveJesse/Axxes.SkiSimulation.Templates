@@ -15,8 +15,6 @@ services:
     links:
       - "datareceiver"
   algorithm:
-    build:
-      context: ./csharp/Axxes.SkiSimulation.Algorithms.NET
-      dockerfile: Dockerfile
+    image: "jessevdk/axxes:algorithm"
     depends_on:
       - engine
