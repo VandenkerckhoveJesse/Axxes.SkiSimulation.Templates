@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System;
 using System.Linq;
+using System.Threading;
 using Grpc.Core;
 
 namespace Axxes.SkiSimulation.Algorithms.NET
@@ -16,13 +17,16 @@ namespace Axxes.SkiSimulation.Algorithms.NET
     { 
         private static async Task Main(string[] args)
         {
+            Console.WriteLine("Waiting");
+            await Task.Delay(TimeSpan.FromSeconds(2));
+            Console.WriteLine("Requesting");
             var httpClientHandler = new HttpClientHandler
             {
                 ServerCertificateCustomValidationCallback =
                     HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
             };
             var httpClient = new HttpClient(httpClientHandler);
-            var channel = GrpcChannel.ForAddress("https://engine:5001",
+            var channel = GrpcChannel.ForAddress("https://localhost:5001",
                 new GrpcChannelOptions { HttpClient = httpClient });
             var client = new EngineManagement.EngineManagementClient(channel);
 
