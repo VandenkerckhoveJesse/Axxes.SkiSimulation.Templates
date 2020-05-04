@@ -26,7 +26,7 @@ namespace Axxes.SkiSimulation.Algorithms.NET
                     HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
             };
             var httpClient = new HttpClient(httpClientHandler);
-            var channel = GrpcChannel.ForAddress("https://localhost:5001",
+            var channel = GrpcChannel.ForAddress("https://engine:5001",
                 new GrpcChannelOptions { HttpClient = httpClient });
             var client = new EngineManagement.EngineManagementClient(channel);
 

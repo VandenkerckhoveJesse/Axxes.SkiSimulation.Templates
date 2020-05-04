@@ -1,8 +1,0 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1.200 AS build-env
-WORKDIR /app
-COPY * ./
-RUN dotnet build
-ENV ASPNETCORE_URLS https://*:5003
-ENV ASPNETCORE_ENVIRONMENT "Development"
-ENTRYPOINT ["dotnet", "bin/Debug/netcoreapp3.1/Axxes.SkiSimulation.DataReceiver.dll"]
-EXPOSE 5003
