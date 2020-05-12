@@ -6,6 +6,8 @@ services:
       - "./web/public/results:/app/results"
     environment:
       - ENV_LOCATION=local
+      - ENV_MAP_FILE=nojaf_map.json
+      - ENV_START_LOCATION=50
   algorithm:
     build:
       context: ./csharp/Axxes.SkiSimulation.Algorithms.NET
